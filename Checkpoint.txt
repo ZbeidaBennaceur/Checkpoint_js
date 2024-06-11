@@ -1,0 +1,74 @@
+function reverse (mot) {
+    var motinverse=""
+    for (var i=mot.length-1; i>=0; i--) {
+        motinverse+=mot[i]
+    }
+   return motinverse
+}
+
+ console.log (reverse("hello"))
+
+---------
+
+function up (mot) {
+var motup=""
+
+    for (var i=0; i<mot.length; i++) {
+
+    if (i===0) {
+     motup+=mot[0].toUpperCase()
+    }
+ else if (mot[i-1]===" ") 
+ {
+     motup+=mot[i].toUpperCase()}
+else {
+motup += mot [i]
+ }
+
+}
+ return motup
+    }
+console.log (up("hello word"))
+-----------------------------------------------
+function max(arr){
+    var max=arr[0]
+    var min=arr[0]
+    for (var i=1; i<arr.length; i++) {
+        if (arr[i]>max) {
+            max=arr[i]
+        }
+    }
+    return max
+}
+console.log (max([18, 14, 0, 3, 4]));
+
+function min(arr){
+    var min=arr[0]
+    for (var i=1; i<arr.length;i++) {
+        if (arr[i]<min) {
+            min=arr[i]
+        }
+    }
+    return min
+}
+
+console.log (min([18, 14, 0, 3, 4]));
+----------------------------------------------
+function sum(arr){
+var total=0
+    for (var i=0; i<arr.length; i++) {
+       total+=arr[i]
+        }
+    return total
+}
+console.log (sum([18, 50, 0, 3, 4]));
+--------------------------------------------------
+function filtre(arr) {
+var sup = []
+    for (var i=0; i<arr.length; i++) {
+    if (arr[i]>12) {
+        sup.push(arr[i]) }
+        }
+    return sup
+}
+console.log (filtre([18, 12, 0, 3, 4]))
